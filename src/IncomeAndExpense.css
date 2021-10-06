@@ -1,0 +1,26 @@
+.feeContainer {
+  background-color: #ededed;
+  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+  margin: 10px;
+  height: 35vh;
+  width: 40vw;
+  border-radius: 30px;
+}
+
+.feeDes {
+  display: flex;
+}
+
+.feeDesLeft {
+  display: flex;
+  flex-direction: column;
+}
+.feeDesLeftElement {
+  padding: 10px 40px 20px 70px;
+}
+.feeDesLeft > p {
+  background-color: blue;
+}
+.feeContainer > h4 {
+  padding: 10px 10px 0px 20px;
+}
