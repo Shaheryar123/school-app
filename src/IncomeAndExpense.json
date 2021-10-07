@@ -1,14 +1,14 @@
 [
     {
         "name": "Expense",
-        "quantity": 10000
+        "quantity": 10
     },
     {
         "name": "Fees",
-        "quantity": 28000
+        "quantity": 28
     },
     {
         "name": "Collection",
-        "quantity": 22000
+        "quantity": 22
     }
 ]

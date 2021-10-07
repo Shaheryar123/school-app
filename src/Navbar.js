@@ -1,9 +1,20 @@
 import './navbar.css'
 import DonutLargeIcon from '@material-ui/icons/DonutLarge';
-import { IconButton } from '@material-ui/core';
+import { IconButton, Menu, MenuList } from '@material-ui/core';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
+import { useState } from 'react';
 
-const Navbar = () => {
+const Navbar = () =>
+{
+    const [dropDown, setDropDown] = useState(null)
+    const handleDropDown = e =>
+    {
+        setDropDown(e.currentTarget)
+    }
+    const handleMenuClose = () =>
+    {
+        setDropDown(null)
+    }
     return (
         <div className='navbar' >
             <div className = 'navbarHeader'>
@@ -23,8 +34,12 @@ const Navbar = () => {
                 <div className ='navbarBodyElement'>
                 <p>Students</p>
                 <IconButton>
-                    <ArrowDropDownIcon />
+                    <ArrowDropDownIcon onClick ={handleDropDown} />
                     </IconButton>
+                    <Menu id ='menu' onClose = {handleMenuClose} dropDown ={dropDown} open = {Boolean(dropDown)}>
+                        <MenuList>All Students</MenuList>
+                        <MenuList>Add new Student</MenuList>
+                    </Menu>
                 </div>
                 <hr></hr>
                 <div className ='navbarBodyElement'>

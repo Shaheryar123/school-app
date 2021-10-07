@@ -11,14 +11,15 @@ const IncomeAndExpense = () =>
         </svg>
     )
     const Bar = ({fill='#000', x,y,height,width}) => (
-        <rect fill ={fill} x={ x} y={y} height ={height} width ={width}  />
+        <rect fill={fill}  x={x} y={y} height={height} width={width} />
+        
     )
 
     const greatestValue = values => values.reduce((acc,cur) =>(cur>acc? cur:acc), -Infinity)
     const BarChart = ({incomeandexpense}) =>
     {
-        const barWidth = 20
-        const barMargin = 5
+        const barWidth = 80
+        const barMargin = 30
         const width = incomeandexpense.length * (barWidth + barMargin)
         const height =greatestValue(incomeandexpense.map(datum => datum.quantity))
         return (
@@ -26,11 +27,12 @@ const IncomeAndExpense = () =>
                 {incomeandexpense.map((datum, index)=>(
                 <Bar
                         key={datum.name}
-                        fill ='teal'
-                    x={index * (barWidth + barMargin)}
-                    y={height -datum.quantity}
-                    width={barWidth}
-                    height ={datum.quantity}/>
+                        fill='teal'
+                        x={index * (barWidth + barMargin)}
+                        y={height - datum.quantity}
+                        width={barWidth}
+                        height={datum.quantity}
+                        />
                 ))}
             </Chart>
         )

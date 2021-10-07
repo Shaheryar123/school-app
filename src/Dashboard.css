@@ -3,26 +3,3 @@
   height: 95vh;
   background-color: #dadbd3;
 }
-.dashboardRecords {
-  display: flex;
-  justify-content: space-between;
-  margin-left: 70px;
-  margin-right: 70px;
-}
-
-.dashboardRecord {
-  margin: 10px;
-  background-color: #ededed;
-  justify-content: space-between;
-  border-radius: 20px;
-  padding: 30px;
-  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
-  margin-left: 10px;
-  display: flex;
-  align-items: center;
-  width: 10vw;
-}
-
-.dashboardRecord > h2 {
-  margin-left: 20px;
-}
