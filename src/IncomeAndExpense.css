@@ -24,3 +24,8 @@
 .feeContainer > h4 {
   padding: 10px 10px 0px 20px;
 }
+.chart {
+  padding: 30px;
+  margin-left: 80px;
+  max-height: 20vh;
+}
