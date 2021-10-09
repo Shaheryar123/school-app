@@ -9,8 +9,17 @@
   align-items: center;
   padding: 10px;
   height: 5vh;
+  cursor: pointer;
 }
+.dropdown {
+  font-size: 1em;
+  cursor: pointer;
 
+  margin: -250px 0px 0px 250px;
+}
+.dropdownElement {
+  background-color: #5bccf6;
+}
 .navbarBody {
   display: flex;
   flex-direction: column;

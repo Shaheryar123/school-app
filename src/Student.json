@@ -1,0 +1,74 @@
+[
+    {
+        "name": "Maryam Khan",
+        "fatherName": "Kamal Khan",
+        "age":18,
+        "class":9,
+        "rollNo":11241,
+        "gender":"Female",
+        "section":"B",
+        "photo":"E:/javascript/School Management System/pics/ahsan.jpg",
+        "address":"Johar, Karachi",
+        "contactNo": "0322-0000000"
+    },
+    {
+        "name": "Usman Ahmed",
+        "fatherName": "Ahmed",
+        "age":12,
+        "class":7,
+        "rollNo":12798,
+        "gender":"Male",
+        "section":"A",
+        "address":"Maymar",
+        "photo":"‪E://javascript//waleed.JPG",
+        "contactNo": "0300-0000000"
+    },
+    {
+        "name": "Ibrahim kamal",
+        "fatherName": "Kamal Khan",
+        "age":14,
+        "class":8,
+        "rollNo":1241,
+        "gender":"Male",
+        "section":"B",
+        "photo":"E:/javascript/School Management System/pics/ahsan.jpg",
+        "address":"Ahsanabad, Karachi",
+        "contactNo": "0312-0000000"
+    },
+    {
+        "name": "Maryam Khan",
+        "fatherName": "Kamal Khan",
+        "age":18,
+        "class":9,
+        "rollNo":11241,
+        "gender":"Female",
+        "section":"B",
+        "photo":"E:/javascript/School Management System/pics/ahsan.jpg",
+        "address":"Johar, Karachi",
+        "contactNo": "0322-0000000"
+    },
+    {
+        "name": "Aisha Khan",
+        "fatherName": "Ahmed Khan",
+        "age":10,
+        "photo":"E:/javascript/School Management System/pics/ahsan.jpg",
+        "class":4,
+        "rollNo":874,
+        "gender":"Female",
+        "section":"A",
+        "address":"North Karachi,Karachi",
+        "contactNo": "0321-0000000"
+    },
+    {
+        "name": "Ibrahim kamal",
+        "fatherName": "Kamal Khan",
+        "age":14,
+        "class":8,
+        "rollNo":1241,
+        "gender":"Male",
+        "section":"B",
+        "photo":"E:/javascript/School Management System/pics/ahsan.jpg",
+        "address":"Ahsanabad, Karachi",
+        "contactNo": "0312-0000000"
+    }
+]

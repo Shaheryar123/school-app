@@ -1,0 +1,49 @@
+.createStudent {
+  padding: 10px;
+  height: 95vh;
+  background-color: #dadbd3;
+}
+
+.createStudentContainer {
+  background-color: #ededed;
+  box-shadow: -1px 4px 20px -6px rgba(0, 0, 0, 0.75);
+  margin: 10px;
+  height: 85vh;
+  width: 80vw;
+  border-radius: 20px;
+}
+
+.createStudentPicture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.createStudentForm {
+  display: flex;
+  flex-direction: column;
+}
+.createStudentForm1stRow {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.createStudentForm2ndRow {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.createStudentForm3rdRow {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.createStudentbtn {
+  align-items: center;
+  background-color: blue;
+  color: white;
+  border: none;
+
+  border-radius: 3px;
+  width: 100px;
+  height: 50px;
+}

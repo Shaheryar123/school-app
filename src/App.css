@@ -1,3 +1,7 @@
 .app {
   display: flex;
 }
+.appHeader {
+  display: flex;
+  flex-direction: column;
+}
