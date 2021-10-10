@@ -11,6 +11,24 @@ function App()
   return (
     <Router>
       <Switch>
+      <Route path ='/createteacher'>
+        <div className = 'app'>
+        <Navbar />
+      <div className = 'appHeader'>
+        <Header />
+        <h1>Create New Teacher</h1>
+        </div>
+        </div>  
+        </Route>
+        <Route path ='/teachers'>
+        <div className = 'app'>
+        <Navbar />
+      <div className = 'appHeader'>
+        <Header />
+        <h1>All Teacher</h1>
+        </div>
+        </div>  
+          </Route>
         <Route path ='/createstudent'>
         <div className = 'app'>
         <Navbar />

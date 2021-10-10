@@ -39,10 +39,12 @@
 }
 .createStudentbtn {
   align-items: center;
-  background-color: blue;
-  color: white;
+  background-color: rgb(90, 50, 155);
+  font-weight: 900;
   border: none;
-
+  margin-top: 30px;
+  margin-left: 35vw;
+  color: #dadbd3;
   border-radius: 3px;
   width: 100px;
   height: 50px;

@@ -7,7 +7,7 @@
         "rollNo":11241,
         "gender":"Female",
         "section":"B",
-        "photo":"E:/javascript/School Management System/pics/ahsan.jpg",
+        "photo":"../../pics/ahsan.jpg",
         "address":"Johar, Karachi",
         "contactNo": "0322-0000000"
     },

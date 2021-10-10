@@ -2,7 +2,9 @@ import { Avatar } from '@material-ui/core'
 import { AddAPhoto } from '@material-ui/icons'
 import { IconButton } from '@material-ui/core'
 import './CreateStudent.css'
-const CreateStudent = () => {
+const CreateStudent = () =>
+{
+    
     return (
         <div className= 'createStudent'>
             <div className= 'createStudentContainer'>
@@ -12,6 +14,7 @@ const CreateStudent = () => {
                 <AddAPhoto />
                     </IconButton>
                     <h1>Student Admission Form</h1>
+                    
                 </div>
                 <div className= 'createStudentForm'>
                     <form>
@@ -25,8 +28,8 @@ const CreateStudent = () => {
                         <input type ='text' placeholder ='Enter Father Name'></input>
                             </div>
                             <div>
-                        <label>Mother Name:</label>
-                        <input type ='text' placeholder ='Enter Mother Name'></input>
+                        <label>Age:</label>
+                        <input type ='text' placeholder ='Enter Age'></input>
                         </div>
                         </div>
                         <div className='createStudentForm2ndRow'>
@@ -59,10 +62,12 @@ const CreateStudent = () => {
                         </div>
                         </div>
                         
-                        <button  className='createStudentbtn'>SUBMIT</button>            
+                                    
                         
                     </form>
-                    
+                
+                        <button className='createStudentbtn'>SUBMIT</button>
+                
                 </div>
             </div>
      

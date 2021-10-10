@@ -6,15 +6,24 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 const Navbar = () =>
 {
-    const [dropDown, setDropDown] = useState(null)
+    const [dropDownStudent, setDropDownStudent] = useState(null)
+    const [dropDownTeacher, setDropDownTeacher] = useState(null)
     const handleDropDown = e =>
     {
-        setDropDown(e.currentTarget)
+        setDropDownStudent(e.currentTarget)
+    }
+    const handleDropDownTeacher = e =>
+    {
+        setDropDownTeacher(e.currentTarget)
     }
     
     const handleMenuClose = () =>
     {
-        setDropDown(null)
+        setDropDownStudent(null)
+    }
+    const handleMenuCloseTeacher = () =>
+    {
+        setDropDownTeacher(null)
     }
     return (
         <div className='navbar' >
@@ -37,9 +46,9 @@ const Navbar = () =>
                 <div className ='navbarBodyElement' >
                 <p>Students</p>
                 <IconButton>
-                    <ArrowRightIcon  onClick ={handleDropDown}/>
+                    <ArrowRightIcon  onMouseOver ={handleDropDown} disableRipple />
                     </IconButton>
-                    <Menu  className ='dropdown'  id ='menu' onClose = {handleMenuClose} dropDown ={dropDown} open = {Boolean(dropDown)}>
+                    <Menu  className ='dropdown'  id ='menu' onClick = {handleMenuClose} dropDown ={dropDownStudent} open = {Boolean(dropDownStudent)}>
                         <Link to ='/students'>
                         <MenuList className='dropdownElement'>All Students</MenuList>
                         </Link>
@@ -52,9 +61,16 @@ const Navbar = () =>
                 <div className ='navbarBodyElement'>
                 <p>Teachers</p>
                 <IconButton>
-                    <ArrowRightIcon />
+                    <ArrowRightIcon onMouseOver ={handleDropDownTeacher} disableRipple/>
                     </IconButton>
-                    
+                    <Menu  className ='dropdown'  id ='menu' onClick = {handleMenuCloseTeacher} dropDown ={dropDownTeacher} open = {Boolean(dropDownTeacher)}>
+                        <Link to ='/teachers'>
+                        <MenuList className='dropdownElement'>All Teacher</MenuList>
+                        </Link>
+                        <Link to ='/createteacher'>
+                        <MenuList className ='dropdownElement'>Add new Teacher</MenuList>
+                        </Link>
+                    </Menu>
                 </div>
                 <hr></hr>
                 <div className ='navbarBodyElement'>
