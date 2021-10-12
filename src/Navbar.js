@@ -1,30 +1,11 @@
 import './navbar.css'
 import DonutLargeIcon from '@material-ui/icons/DonutLarge';
-import { IconButton, Menu, MenuList } from '@material-ui/core';
+import { IconButton,} from '@material-ui/core';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 const Navbar = () =>
 {
-    const [dropDownStudent, setDropDownStudent] = useState(null)
-    const [dropDownTeacher, setDropDownTeacher] = useState(null)
-    const handleDropDown = e =>
-    {
-        setDropDownStudent(e.currentTarget)
-    }
-    const handleDropDownTeacher = e =>
-    {
-        setDropDownTeacher(e.currentTarget)
-    }
     
-    const handleMenuClose = () =>
-    {
-        setDropDownStudent(null)
-    }
-    const handleMenuCloseTeacher = () =>
-    {
-        setDropDownTeacher(null)
-    }
     return (
         <div className='navbar' >
             <Link to ='/'>
@@ -45,32 +26,36 @@ const Navbar = () =>
                 <hr></hr>
                 <div className ='navbarBodyElement' >
                 <p>Students</p>
-                <IconButton>
-                    <ArrowRightIcon  onMouseOver ={handleDropDown} disableRipple />
+                <div className ='dropdown'>
+                    <IconButton>
+                    <ArrowRightIcon className ="dropbtn"/>
                     </IconButton>
-                    <Menu  className ='dropdown'  id ='menu' onClick = {handleMenuClose} dropDown ={dropDownStudent} open = {Boolean(dropDownStudent)}>
+                        <div className="dropdown-content">
                         <Link to ='/students'>
-                        <MenuList className='dropdownElement'>All Students</MenuList>
+                            <p>All Student</p>
+                            </Link>
+                            <Link to ='/createstudent'>
+                            <p >Create New Student</p>
                         </Link>
-                        <Link to ='/createstudent'>
-                        <MenuList className ='dropdownElement'>Add new Student</MenuList>
-                        </Link>
-                    </Menu>
+                        </div>
+                        </div>                       
                 </div>
                 <hr></hr>
                 <div className ='navbarBodyElement'>
                 <p>Teachers</p>
-                <IconButton>
-                    <ArrowRightIcon onMouseOver ={handleDropDownTeacher} disableRipple/>
+                <div className ='dropdown'>
+                    <IconButton>
+                    <ArrowRightIcon className ="dropbtn"/>
                     </IconButton>
-                    <Menu  className ='dropdown'  id ='menu' onClick = {handleMenuCloseTeacher} dropDown ={dropDownTeacher} open = {Boolean(dropDownTeacher)}>
+                        <div className="dropdown-content">
                         <Link to ='/teachers'>
-                        <MenuList className='dropdownElement'>All Teacher</MenuList>
-                        </Link>
-                        <Link to ='/createteacher'>
-                        <MenuList className ='dropdownElement'>Add new Teacher</MenuList>
-                        </Link>
-                    </Menu>
+                        <p >All Teachers</p>
+                            </Link>
+                            <Link to ='/createteacher'>
+                            <p>Create New Teacher</p>
+                            </Link>
+                        </div>
+                        </div>
                 </div>
                 <hr></hr>
                 <div className ='navbarBodyElement'>

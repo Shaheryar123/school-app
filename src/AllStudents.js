@@ -1,4 +1,3 @@
-import React from 'react'
 import './AllStudents.css'
 import Student from './Student'
 const AllStudents = () => {

@@ -3,6 +3,7 @@ import './App.css';
 import Home from './Home';
 import Header from './Header';
 import AllStudents from './AllStudents';
+import AllTeachers from './AllTeachers';
 import CreateStudent from './CreateStudent'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
@@ -16,7 +17,7 @@ function App()
         <Navbar />
       <div className = 'appHeader'>
         <Header />
-        <h1>Create New Teacher</h1>
+        <h1>Create Teahcer</h1>
         </div>
         </div>  
         </Route>
@@ -25,7 +26,7 @@ function App()
         <Navbar />
       <div className = 'appHeader'>
         <Header />
-        <h1>All Teacher</h1>
+        <AllTeachers />
         </div>
         </div>  
           </Route>
