@@ -1,36 +1,20 @@
 import React from 'react'
 import { Avatar } from '@material-ui/core'
 import './Student.css'
-import students from './Student.json'
 
-const Student = () => {
+const Student = ({heading,body}) => {
     return (
         <div className='studentContainer'>
-            <div className='students'>
-            <strong>Photo</strong>
-                        <strong>Roll No</strong>
-                    <strong>Name</strong>
-                        <strong>FatherName</strong>
-                        <strong>Gender</strong>
-                        <strong>Class</strong>
-                        <strong>Section</strong>
-                        <strong>Contact No</strong>
-                
-                </div>
-            {
-                students.map((student) =>
-                    <div className='student'>   
-                        <Avatar src={student.photo} />
-                        <p>{ student.rollNo}</p>
-                    <p>{student.name}</p>
-                        <p>{student.fatherName}</p>
-                        <p>{student.gender}</p>
-                        <p>{student.class}</p>
-                        <p>{student.section}</p>
-                        <p>{student.contactNo}</p>
-                    
-                    </div>         )
-            }
+           <table style={{ width: 500 }}>
+                <thead>
+                    <tr>
+                        {heading.map(head => <th>{head}</th>)}
+                    </tr>
+                </thead>
+                <tbody>
+                    {body.map(row => <th>{row}</th>)}
+                </tbody>
+            </table>       
             
         </div>
     )
