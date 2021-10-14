@@ -2,21 +2,42 @@ import React from 'react'
 import { Avatar } from '@material-ui/core'
 import './Student.css'
 
-const Student = ({heading,body}) => {
+const Student = ({students}) => {
     return (
         <div className='studentContainer'>
-           <table style={{ width: 500 }}>
+            <div className='students'>
+            <table>
                 <thead>
                     <tr>
-                        {heading.map(head => <th>{head}</th>)}
+                        <th>Photo</th>
+                        <th>Roll No</th>
+                        <th>Name</th>
+                        <th>Father Name</th>
+                        <th>Gender</th>
+                        <th>Class</th>
+                        <th>Section</th>
+                        <th>Contact No</th>
                     </tr>
                 </thead>
                 <tbody>
-                    {body.map(row => <th>{row}</th>)}
+                    {students.map((student) =>
+                        <tr>
+                            <td >{<Avatar style={{marginLeft:'40px'}}/>}</td>
+                            <td>{student.rollNo}</td>
+                            <td>{ student.name}</td>
+                            <td>{student.fatherName}</td>
+                            <td>{ student.gender}</td>
+                            <td>{ student.class}</td>
+                            <td>{ student.section}</td>
+                            <td>{ student.contactNo}</td>
+                            
+
+                    </tr>
+                    )}
                 </tbody>
-            </table>       
-            
-        </div>
+            </table>
+            </div>
+            </div>
     )
 }
 

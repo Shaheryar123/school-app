@@ -35,7 +35,7 @@ const Navbar = () =>
                             <p>All Student</p>
                             </Link>
                             <Link to ='/createstudent'>
-                            <p >Create New Student</p>
+                            <p >Add New Student</p>
                         </Link>
                         </div>
                         </div>                       
@@ -52,7 +52,7 @@ const Navbar = () =>
                         <p >All Teachers</p>
                             </Link>
                             <Link to ='/createteacher'>
-                            <p>Create New Teacher</p>
+                            <p>Add New Teacher</p>
                             </Link>
                         </div>
                         </div>
